@@ -1,0 +1,32 @@
+<h1>Nuevo Evento</h1>
+
+<div class="formulario">
+<%= form_for :evento, url: eventos_path do |f| %>
+  <p>
+    <%= f.label :nombre %><br>
+    <%= f.text_area :nombre %>
+  </p>
+
+  <p>
+    <%= f.label :fecha %><br>
+    <%= f.date_field :fecha %>
+  </p>
+ 
+  <p>
+    <%= f.label :ubicacion %><br>
+    <%= f.text_area :ubicacion %>
+  </p>
+ 
+  <p>
+    <%= f.label :descripcion %><br>
+    <%= f.text_area :descripcion %>
+  </p>
+
+  <p>
+    <%= f.submit 'Guardar Evento' %>
+  </p>
+
+<% end %>
+</div>
+
+<%= link_to 'Volver', eventos_path %>

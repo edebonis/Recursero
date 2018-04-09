@@ -1,0 +1,108 @@
+// Place all the styles related to the bienvenido controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#contenido{
+    background-color: #FFF;
+    width: 100%;
+    height: auto;
+}
+
+#encabezado{
+    height: 116px;
+    text-align: center;
+    width: 100%;
+}
+#encabezado h2{
+    padding-left: -50px;
+
+}
+#fotos_superiores{
+    background-color: #FFF; 
+    height: 351px;
+}
+.tumb{
+    float: left;
+    margin-left: 14%;
+    background-color: #CCC;
+
+}
+
+.tumb h3 {
+    width: 100%;
+}
+
+#fotos_inferiores{
+    height: 359px;
+
+}
+.tumb2{
+    margin-left: 14%;
+    float: left;
+   
+}
+
+#botonera {
+    height: 44px;
+    background-color: #ff2a2a;
+    width: 100%;
+
+}
+#botonera ul li a {
+    float: center;
+    padding-left: 340px;
+    padding-right: 80px;
+    padding-top: 15px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 21px;
+    text-decoration: none;
+    color:#FFF;
+
+}
+#botonera ul li a:hover {
+ 	color: #ffd32a
+
+}
+
+#botonera2 ul{
+   list-style-type: none;
+   text-align: center;
+}
+
+#botonera2 li{
+   display: inline;
+   text-align: center;
+   margin: 15px 25px 35px 22px;
+}
+
+#botonera2 li a {
+   color: #666;
+   background-color: #eeeeee;
+   text-decoration: none;
+}
+
+#botonera2{
+   margin-top: 30px;
+   background-color: #E8F46E;
+   padding: 10px 20px 10px 10px;
+   text-size: 25px;
+}
+
+
+
+#botonera2 ul li{
+    float: center;
+    color: #000
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2 {
+  font-family: Indie Flower;
+  text-align: center;
+}
+
+

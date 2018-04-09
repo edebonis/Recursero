@@ -1,0 +1,23 @@
+<h2>Listado de eventos</h2>
+ 
+<%= link_to 'Nuevo Evento', new_evento_path %>
+ 
+<table id="tabla" border="0" cellspacing="0">
+  <tr>
+    <th>Nombre</th>
+    <th>Fecha</th>
+    <th>Ubicación</th>
+    <th>Descripción</th>
+    <th></th>
+  </tr>
+ 
+  <% @evento.each do |evento| %>
+    <tr>
+      <td><%= evento.nombre %></td>
+      <td><%= evento.fecha %></td>
+      <td><%= evento.ubicacion %></td>
+      <td><%= evento.descripcion %></td>
+      <td><%= link_to 'Ver', evento_path(evento) %></td>
+    </tr>
+  <% end %>
+</table>
