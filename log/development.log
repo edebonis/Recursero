@@ -13183,3 +13183,552 @@ Processing by ContactoController#index as HTML
 Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:18:15 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (536.8ms)
+Completed 200 OK in 587ms (Views: 576.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:19:53 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:25:14 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `date' for 2018-04-10 11:25:14 -0300:Time):
+    24:     <div id="fecha">
+    25:         <h2>
+    26:             <%=
+    27:                 Time.now.date
+    28:                 %>
+    29:         </h2>
+    30:                 
+  
+app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb___538541194798198578_47252509080200'
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:25:43 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:38:36 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 440ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `infojardin_path' for #<#<Class:0x007f49d2198ac0>:0x007f49d217c208>):
+    42:                     <%= link_to 'Contacto', 'contacto/index'%>
+    43:                 </li>  
+    44:                 <li>
+    45:                     <%= link_to 'InfoJardín', infojardin_path %>
+    46:                 </li>
+    47:             </ul>
+    48:         </div>
+  
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb___538541194798198578_69977517235800'
+Started POST "/__web_console/repl_sessions/d5713a60598243cf23bcb25bcb5a673d/trace" for 127.0.0.1 at 2018-04-10 11:38:47 -0300
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:45:07 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 342ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `infojardin_path' for #<#<Class:0x0055f3a8bbbb28>:0x0055f3a8bac830>):
+    42:                     <%= link_to 'Contacto', 'contacto/index'%>
+    43:                 </li>  
+    44:                 <li>
+    45:                     <%= link_to 'InfoJardín', infojardin_path %>
+    46:                 </li>
+    47:             </ul>
+    48:         </div>
+  
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb___538541194798198578_47252498029220'
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:46:20 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 383ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `infojardin_path' for #<#<Class:0x007f49d2e72020>:0x007f49d2e70360>):
+    42:                     <%= link_to 'Contacto', 'contacto/index'%>
+    43:                 </li>  
+    44:                 <li>
+    45:                     <%= link_to 'InfoJardín', infojardin_path %>
+    46:                 </li>
+    47:             </ul>
+    48:         </div>
+  
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb___538541194798198578_69977524422240'
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:51:13 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 358ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `infojardin_path' for #<#<Class:0x007f49d2e72020>:0x007f49d24df288>):
+    42:                     <%= link_to 'Contacto', 'contacto/index'%>
+    43:                 </li>  
+    44:                 <li>
+    45:                     <%= link_to 'InfoJardín', infojardin_path %>
+    46:                 </li>
+    47:             </ul>
+    48:         </div>
+  
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb___538541194798198578_69977518520880'
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:51:59 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 330ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `infojardin_path' for #<#<Class:0x007f49d2e72020>:0x007f49d2b65328>):
+    42:                     <%= link_to 'Contacto', 'contacto/index'%>
+    43:                 </li>  
+    44:                 <li>
+    45:                     <%= link_to 'InfoJardín', infojardin_path %>
+    46:                 </li>
+    47:             </ul>
+    48:         </div>
+  
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb___538541194798198578_69977522171280'
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:53:37 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 349ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `infojardin_path' for #<#<Class:0x007f49d2e72020>:0x007f49d21612f0>):
+    42:                     <%= link_to 'Contacto', 'contacto/index'%>
+    43:                 </li>  
+    44:                 <li>
+    45:                     <%= link_to 'InfoJardín', infojardin_path %>
+    46:                 </li>
+    47:             </ul>
+    48:         </div>
+  
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb___538541194798198578_69977516942420'
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:55:16 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 347ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `infojardin_path' for #<#<Class:0x007f49d2e72020>:0x007f49d2bcc6e0>):
+    42:                     <%= link_to 'Contacto', 'contacto/index'%>
+    43:                 </li>  
+    44:                 <li>
+    45:                     <%= link_to 'InfoJardín', infojardin_path %>
+    46:                 </li>
+    47:             </ul>
+    48:         </div>
+  
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb___538541194798198578_69977522284580'
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:56:41 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 359ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `infojardin_path' for #<#<Class:0x007f49b1278010>:0x007f49b124e260>
+Did you mean?  infojardin_index_path):
+    42:                     <%= link_to 'Contacto', 'contacto/index'%>
+    43:                 </li>  
+    44:                 <li>
+    45:                     <%= link_to 'InfoJardín', infojardin_path %>
+    46:                 </li>
+    47:             </ul>
+    48:         </div>
+  
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb___538541194798198578_69977521698120'
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:57:27 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 52ms (Views: 50.3ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 11:57:34 -0300
+Processing by InfojardinController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+NameError (uninitialized constant InfojardinController::InfoJardin):
+  
+app/controllers/infojardin_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2018-04-10 11:57:49 -0300
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 31.6ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 11:58:10 -0300
+Processing by InfojardinController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant InfojardinController::InfoJardin):
+  
+app/controllers/infojardin_controller.rb:3:in `index'
+Started POST "/__web_console/repl_sessions/a089fab997cdc3a5a8869324a7e3deba/trace" for 127.0.0.1 at 2018-04-10 11:58:19 -0300
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 11:58:46 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 29.8ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 11:59:27 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 33.7ms)
+
+
+Started GET "/infojardin/contacto/index" for 127.0.0.1 at 2018-04-10 12:00:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/infojardin/contacto/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 12:01:09 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 33.9ms)
+
+
+Started GET "/infojardin/contacto/index" for 127.0.0.1 at 2018-04-10 12:01:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/infojardin/contacto/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/contacto/index" for 127.0.0.1 at 2018-04-10 12:01:17 -0300
+Processing by ContactoController#index as HTML
+  Rendering contacto/index.html.erb within layouts/application
+  Rendered contacto/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 28.7ms)
+
+
+Started GET "/eventos" for 127.0.0.1 at 2018-04-10 12:01:21 -0300
+Processing by EventosController#index as HTML
+  Rendering eventos/index.html.erb within layouts/application
+  [1m[36mEvento Load (0.2ms)[0m  [1m[34mSELECT "eventos".* FROM "eventos"[0m
+  Rendered eventos/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 59ms (Views: 54.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 12:01:24 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 12:03:27 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 27.7ms)
+
+
+Started GET "/infojardin/infojardin/index" for 127.0.0.1 at 2018-04-10 13:04:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/infojardin/infojardin/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:04:33 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 33.1ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:05:30 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 33.7ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:07:11 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 40.8ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:07:34 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 46.4ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:07:54 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 43.7ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:08:13 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 62ms (Views: 60.1ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:08:45 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 43.3ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:08:57 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 49ms (Views: 46.5ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:14:03 -0300
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 39.9ms)
+
+
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:14:27 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by InfojardinController#index as HTML
+  Rendering infojardin/index.html.erb within layouts/application
+  Rendered infojardin/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 398ms (Views: 387.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20180410161444)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180410161444"]]
+  [1m[35m (101.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTranslationForPosts (20180410161555)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTranslationForPosts (20180410161555)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTranslationForPosts (20180410161555)
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:21:13 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/__web_console/repl_sessions/140855a94ffd0bc08ca93a0eb8437774/trace" for 127.0.0.1 at 2018-04-10 13:21:52 -0300
+Started POST "/__web_console/repl_sessions/140855a94ffd0bc08ca93a0eb8437774/trace" for 127.0.0.1 at 2018-04-10 13:21:55 -0300
+Started POST "/__web_console/repl_sessions/140855a94ffd0bc08ca93a0eb8437774/trace" for 127.0.0.1 at 2018-04-10 13:21:57 -0300
+Started POST "/__web_console/repl_sessions/140855a94ffd0bc08ca93a0eb8437774/trace" for 127.0.0.1 at 2018-04-10 13:22:00 -0300
+Started POST "/__web_console/repl_sessions/140855a94ffd0bc08ca93a0eb8437774/trace" for 127.0.0.1 at 2018-04-10 13:22:00 -0300
+Started POST "/__web_console/repl_sessions/140855a94ffd0bc08ca93a0eb8437774/trace" for 127.0.0.1 at 2018-04-10 13:22:01 -0300
+Started POST "/__web_console/repl_sessions/140855a94ffd0bc08ca93a0eb8437774/trace" for 127.0.0.1 at 2018-04-10 13:22:04 -0300
+Started POST "/__web_console/repl_sessions/140855a94ffd0bc08ca93a0eb8437774/trace" for 127.0.0.1 at 2018-04-10 13:22:05 -0300
+Started POST "/__web_console/repl_sessions/140855a94ffd0bc08ca93a0eb8437774/trace" for 127.0.0.1 at 2018-04-10 13:22:09 -0300
+Started GET "/infojardin/index" for 127.0.0.1 at 2018-04-10 13:22:39 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'

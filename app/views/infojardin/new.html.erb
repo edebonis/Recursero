@@ -1,0 +1,27 @@
+<h1>Nuevo Articulo</h1>
+
+<div class="formulario">
+<%= form_for :infojardin, url: infojardin_path do |f| %>
+  <p>
+    <%= f.label :titulo %><br>
+    <%= f.text_area :titulo %>
+  </p>
+
+  <p>
+    <%= f.label :fecha %><br>
+    <%= f.date_field :fecha %>
+  </p>
+
+  <p>
+    <%= f.label :texto %><br>
+    <%= f.text_area :texto %>
+  </p>
+
+  <p>
+    <%= f.submit 'Subir Articulo' %>
+  </p>
+
+<% end %>
+</div>
+
+<%= link_to 'Volver', infojardin_path %>
