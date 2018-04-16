@@ -23,8 +23,6 @@ saml_idp.crt
 **/tmp/**
 *.db
 
-Gemfile.lock
-
 .idea
 
 # Others
