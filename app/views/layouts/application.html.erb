@@ -21,11 +21,9 @@
 <div id="TT_yi1ALhYxd88xW2NUTfzjjDzzzCaUMYc2rY1t1ZiIKEz"></div>
 <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_yi1ALhYxd88xW2NUTfzjjDzzzCaUMYc2rY1t1ZiIKEz"></script>
     </div>
-    <div id="fecha">
+    <div id="fecha" es:>
         <h2>
-            <%=
-                Time.now.strftime("%a %d de %m, %Y")
-                %>
+            <%= I18n.localize(Date.today, format: "%A %d %B, %Y") %>
         </h2>
                 
     </div>
