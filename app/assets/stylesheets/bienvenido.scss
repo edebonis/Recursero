@@ -50,6 +50,7 @@
 
 }
 #botonera ul li a {
+  display: flex;
     float: center;
     padding-left: 340px;
     padding-right: 80px;
@@ -66,6 +67,7 @@
 }
 
 #botonera2 ul{
+
    list-style-type: none;
    text-align: center;
 }
@@ -103,6 +105,12 @@ h1{
 h2 {
   font-family: Indie Flower;
   text-align: center;
+}
+
+#mapa {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 
