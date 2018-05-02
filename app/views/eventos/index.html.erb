@@ -7,6 +7,7 @@
     <th>Nombre</th>
     <th>Fecha</th>
     <th>Ubicación</th>
+    <th>Hora</th>
     <th>Descripción</th>
     <th></th>
   </tr>
@@ -16,6 +17,7 @@
       <td><%= evento.nombre %></td>
       <td><%= evento.fecha %></td>
       <td><%= evento.ubicacion %></td>
+      <td><%= evento.hora %></td>
       <td><%= evento.descripcion %></td>
       <td><%= link_to 'Ver', evento_path(evento) %></td>
     </tr>
