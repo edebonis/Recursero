@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 20180502173008) do
     t.date "fecha"
     t.text "ubicacion"
     t.text "descripcion"
-    t.datetime "hora"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.time "hora"
   end
 
 end

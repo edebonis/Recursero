@@ -2,7 +2,7 @@
  
 <%= link_to 'Nuevo Evento', new_evento_path %>
  
-<table id="tabla" border="0" cellspacing="0">
+<table id="tabla" border="0" cellspacing="0" >
   <tr>
     <th>Nombre</th>
     <th>Fecha</th>
@@ -15,9 +15,9 @@
   <% @evento.each do |evento| %>
     <tr>
       <td><%= evento.nombre %></td>
-      <td><%= evento.fecha %></td>
+      <td><%= I18n.localize(evento.fecha, format: "%A %d de %B, %Y") %></td>
       <td><%= evento.ubicacion %></td>
-      <td><%= evento.hora %></td>
+      <td><%= evento.hora ? evento.hora.strftime("%H:%M") : '' %></td>
       <td><%= evento.descripcion %></td>
       <td><%= link_to 'Ver', evento_path(evento) %></td>
     </tr>
