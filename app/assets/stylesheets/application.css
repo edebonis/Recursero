@@ -43,7 +43,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+    display-flex: ;
 }
 
 body {
@@ -77,12 +77,14 @@ table {
 }
 #titulo h1{
     font-size:5vw;
-
+    
 } 
 
 #clima {
     float: center;
-    margin-left: 140px; 
+    width:50%;
+    height:78px;
+    display: flex;
 }
 #encabezado{
     height: 116px;
@@ -138,6 +140,7 @@ table {
 
 #fecha {
   float: right;
+  
 
 }
 
