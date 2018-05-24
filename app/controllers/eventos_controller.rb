@@ -1,7 +1,6 @@
 class EventosController < ApplicationController
 	def index
-    @evento = Evento.all 
-  
+	    @eventos = Evento.order(:fecha).where("fecha >= '"+Time.now.strftime("%Y-%m-%d")+"'")
   	end
 
 	def show
