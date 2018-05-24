@@ -1,0 +1,32 @@
+<h1>Nuevo Lugar</h1>
+
+<div class="formulario">
+<%= form_for :evento, url: lugares_path do |f| %>
+  <p>
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </p>
+
+  <p>
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </p>
+
+  <p>
+    <%= f.label :clasificacion %><br>
+    <%= f.select(:clasificacion, options_for_select(["Centro educativo","Centro de salud","Asesor legal integral","Recreacion","Deporte y cultura","Comunicacion","Centro de jubilados","Ambiente","Negocio"])) %>
+
+  </p>
+ 
+  <p>
+    <%= f.label :contacto %><br>
+    <%= f.text_field :contacto %>
+  </p>
+ 
+ 
+  <p>
+    <%= f.submit 'Guardar' %>
+  </p>
+
+<% end %>
+</div>
