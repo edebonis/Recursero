@@ -5,9 +5,11 @@ class LugaresController < ApplicationController
 	def create
 		render plain: params[:lugar].inspect
 
-		@articulo = Articulo.new(params[:articulo])
+		@lugar = Lugar.new(params[:lugar])
  
-  		@articulo.save
-  		redirect_to @articulo
+  		@lugar.save
+  		redirect_to @lugar
   	end
+
+
 end
