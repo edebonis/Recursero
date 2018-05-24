@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20180521132021) do
     t.time "hora"
   end
 
-  create_table "lugars", force: :cascade do |t|
+  create_table "lugares", force: :cascade do |t|
     t.string "nombre"
     t.string "direccion"
     t.string "clasificacion"

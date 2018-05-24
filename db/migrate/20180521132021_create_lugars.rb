@@ -1,6 +1,6 @@
 class CreateLugars < ActiveRecord::Migration[5.1]
   def change
-    create_table :lugars do |t|
+    create_table :lugares do |t|
       t.string :nombre
       t.string :direccion
       t.string :clasificacion

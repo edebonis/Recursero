@@ -1,0 +1,23 @@
+<h2>Listado de lugares</h2>
+ 
+<%= link_to 'Nuevo Lugar', new_lugar_path %>
+ 
+<table id="tabla" border="0" cellspacing="0" >
+  <tr>
+    <th>Nombre</th>
+    <th>Dirección</th>
+    <th>Descripción</th>
+    <th>Clasificación</th>
+    <th>Contacto</th>
+  </tr>
+ 
+  <% @lugares.each do |lugar| %>
+    <tr>
+      <td><%= lugar.nombre %></td>
+      <td><%= lugar.direccion %></td>
+      <td><%= lugar.descripcion %></td>
+      <td><%= lugar.clasificacion %></td>
+      <td><%= lugar.contacto %></td>
+    </tr>
+  <% end %>
+</table>

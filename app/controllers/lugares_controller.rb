@@ -3,13 +3,22 @@ class LugaresController < ApplicationController
 	end
 
 	def create
-		render plain: params[:lugar].inspect
-
-		@lugar = Lugar.new(params[:lugar])
+		@lugar = Lugar.new(lugar_params)
  
   		@lugar.save
   		redirect_to @lugar
   	end
 
+  	def index
+    	@lugares = Lugar.all
+ 	end
+ 
+  	def show
+    @lugar = Lugar.find(params[:id])
+  	end
 
+  	private
+  def lugar_params
+    params.require(:lugar).permit(:nombre, :direccion, :clasificacion, :contacto)
+  end
 end
