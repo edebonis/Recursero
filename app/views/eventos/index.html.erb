@@ -3,7 +3,7 @@
 
 <%= link_to 'Nuevo Evento', new_evento_path %>
  
-  <table id="tabla" border="0" cellspacing="0" >
+  <table class="tabla" id="tabla" border="0" cellspacing="0" >
   <tr>
     <th>Nombre</th>
     <th>Fecha</th>
@@ -24,3 +24,9 @@
     </tr>
   <% end %>
 </table>
+<div id="calendar"> </div>
+<script>
+    $('#calendar').fullCalendar({
+      events: <%= @eventos.map { |m| {title: m.nombre, start: m.fecha } }.to_json.html_safe %>
+    })
+</script>

@@ -4,7 +4,7 @@ h1{
 	font: Verdana;
 }
 
-table, tr, td {
+.tabla, tr, td {
     border: 3px solid black;
     margin-left: 120px;
    	float:center;
@@ -16,7 +16,7 @@ table, tr, td {
  margin-left: 320px;
 
  }
-table {
+.tabla {
   border: 1px solid #1C6EA4;
   background-color: #EEEEEE;
   width: 50%;
@@ -25,30 +25,30 @@ table {
  
 
 }
-table td, table th {
+.tabla td, .tabla th {
   border: 2px solid #444444;
   padding: 3px 2px;
 }
-table tbody td {
+.tabla tbody td {
   font-size: 16px;
 }
-table tr:nth-child(even) {
+.tabla tr:nth-child(even) {
   background: #D0E4F5;
 }
-table thead {
+.tabla thead {
   background: #74D870;
   background: -moz-linear-gradient(top, #97e294 0%, #82dc7e 66%, #74D870 100%);
   background: -webkit-linear-gradient(top, #97e294 0%, #82dc7e 66%, #74D870 100%);
   background: linear-gradient(to bottom, #97e294 0%, #82dc7e 66%, #74D870 100%);
   border-bottom: 2px solid #444444;
 }
-table thead th {
+.tabla thead th {
   font-size: 15px;
   font-weight: bold;
   color: #FFFFFF;
   border-left: 2px solid #1D84B5;
 }
-table thead th:first-child {
+.tabla thead th:first-child {
   border-left: none;
 }
 
