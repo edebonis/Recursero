@@ -111,7 +111,7 @@
 }
 
 
-.nuevo-lugar {
+.boton-nuevo {
   text-decoration: none;
   padding: 10px;
   font-weight: 600;
@@ -120,9 +120,11 @@
   background-color: #1883ba;
   border-radius: 6px;
   border: 2px solid #0016b0;
+  margin-top: 20px;
+  display: inline-block;
 }
 
-.nuevo-lugar:hover {
+.boton-nuevo:hover {
   color: #1883ba;
   background-color: #ffffff;
 }

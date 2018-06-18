@@ -14,7 +14,7 @@ class EventosController < ApplicationController
   		@evento = Evento.new(evento_params)
  
  	 	@evento.save
-  		redirect_to @evento
+  		redirect_to eventos_path
 	end
 
 	def destroy
