@@ -62,16 +62,19 @@
 }
 
 #calendar {
-  width: 60%;
+  width: 45%;
   margin-top: 20px;
 }
 
-.proximos-eventos {
-  width: 35%;
+.proximos-eventos{
+  width:20%;
+  text-align: center;
 }
-
-#titulo-lista h1{
-  color: #FFFFFF;
-  font-size: 15%;
+.proximos-eventos h2 {
+  border: 1px solid #444444;
+  color: #101712;
+  font:inherit;
+  font-size: 20px;
   font-family:  'Indie Flower', cursive;
+  background-color:#E8F46d;
 }
