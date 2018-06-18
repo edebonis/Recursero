@@ -55,3 +55,23 @@
   margin-bottom: 10px;
  }
 
+.eventos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#calendar {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.proximos-eventos {
+  width: 35%;
+}
+
+#titulo-lista h1{
+  color: #FFFFFF;
+  font-size: 15%;
+  font-family:  'Indie Flower', cursive;
+}

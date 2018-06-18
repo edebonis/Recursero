@@ -1,32 +1,29 @@
-<h2>Listado de eventos</h2>
+
+ 
+
+<div class="eventos">
+  <div id="calendar"> </div>
+  <div class="proximos-eventos">   
+    <h2>Próximos eventos</h2>   
+    <ul>
+      <% @eventos.each do |evento| %>
+        <li>
+          <%= evento.nombre %>
+          <%= I18n.localize(evento.fecha, format: "%A %d de %B") %>
+          <%= evento.hora ? evento.hora.strftime("%H:%M") : '' %>
+          <%= link_to 'Ver', evento_path(evento) %>
+        </li>
+      <% end %>  
+    </ul>
+    <%= link_to 'Nuevo Evento', new_evento_path %>
+  </div>  
+</div>
 
 
-<%= link_to 'Nuevo Evento', new_evento_path %>
- 
-  <table class="tabla" id="tabla" border="0" cellspacing="0" >
-  <tr>
-    <th>Nombre</th>
-    <th>Fecha</th>
-    <th>Ubicación</th>
-    <th>Hora</th>
-    <th>Descripción</th>
-    <th></th>
-  </tr>
- 
-  <% @eventos.each do |evento| %>
-    <tr>
-      <td><%= evento.nombre %></td>
-      <td><%= I18n.localize(evento.fecha, format: "%A %d de %B, %Y") %></td>
-      <td><%= evento.ubicacion %></td>
-      <td><%= evento.hora ? evento.hora.strftime("%H:%M") : '' %></td>
-      <td><%= evento.descripcion %></td>
-      <td><%= link_to 'Ver', evento_path(evento) %></td>
-    </tr>
-  <% end %>
-</table>
-<div id="calendar"> </div>
 <script>
     $('#calendar').fullCalendar({
-      events: <%= @eventos.map { |m| {title: m.nombre, start: m.fecha } }.to_json.html_safe %>
+      events: <%= @eventos.map { |m| {title: m.nombre, start: m.fecha } }.to_json.html_safe %>,
+      height: 480,
+      aspectRatio: 0.2
     })
 </script>
