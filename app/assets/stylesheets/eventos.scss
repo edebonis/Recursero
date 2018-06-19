@@ -62,20 +62,29 @@
 }
 
 #calendar {
-  width: 45%;
-  margin-top: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
 }
 
 .proximos-eventos{
   width:20%;
-  text-align: center;
+  text-align: left;
+  margin-right: 80px;
 }
 .proximos-eventos h2 {
+ text-align: center;
   border: 1px solid #444444;
   color: #101712;
   font:inherit;
   font-size: 20px;
   font-family:  'Indie Flower', cursive;
   background-color:#E8F46d;
+}
+
+.proximos-eventos li {
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
