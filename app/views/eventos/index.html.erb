@@ -23,6 +23,7 @@
     header: {
       left: 'prev,next today',
       center: 'title',
+      right: '',
     },
     locale: 'es',
     events: <%= @eventos.map { |m| {title: m.nombre, start: m.fecha } }.to_json.html_safe %>,
