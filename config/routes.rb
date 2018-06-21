@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'contacto/index'
+  get 'contacto', to: 'contacto#index'
 
   get 'bienvenido/index'
 

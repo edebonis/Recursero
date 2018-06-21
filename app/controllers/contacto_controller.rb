@@ -1,4 +1,5 @@
 class ContactoController < ApplicationController
-  def index
+  def obtenerformulario
   end
+  
 end
