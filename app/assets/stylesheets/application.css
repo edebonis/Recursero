@@ -13,6 +13,8 @@
  *= require fullcalendar
  *= require_tree .
  *= require_self
+ *= require leaflet
+
  */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126

@@ -17,3 +17,4 @@
 //= require fullcalendar
 //= require_tree .
 //= require fullcalendar/locale-all
+//= require leaflet

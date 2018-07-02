@@ -104,12 +104,15 @@
 }
 
 .mapa {
-  margin-top: 10px;
+  margin-top: 10px;  
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+#map {
+  height: 400px;
+}
 
 .boton-nuevo {
   text-decoration: none;
