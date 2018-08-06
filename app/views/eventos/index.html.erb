@@ -8,8 +8,7 @@
       <% @eventos.each do |evento| %>
         <li>
           <%= evento.nombre %>
-          <%= I18n.localize(evento.fecha, format: "%A %d de %B") %>
-          <%= evento.hora ? evento.hora.strftime("%H:%M") : '' %>
+          <%= I18n.localize(evento.fecha, format: "%A %d de %B, %H:%Mhs") %>
           <%= link_to 'Ver', evento_path(evento) %>
         </li>
       <% end %>  

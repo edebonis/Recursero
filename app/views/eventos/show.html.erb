@@ -5,17 +5,12 @@
 </p>
 <p>
   <strong>Fecha:</strong>
-  <%= I18n.localize(@evento.fecha, format: "%A %d de %B, %Y") %>
+  <%= I18n.localize(@evento.fecha, format: "%A %d de %B, %Y a las %H:%Mhs") %>
 </p>
  
 <p>
   <strong>Ubicacion:</strong>
   <%= @evento.ubicacion %>
-</p>
-
-<p>
-  <strong>Hora:</strong>
-  <%= @evento.hora ? @evento.hora.strftime("%H:%M") : '' %>
 </p>
 
 <p>

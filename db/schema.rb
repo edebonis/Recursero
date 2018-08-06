@@ -10,16 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180521132021) do
+ActiveRecord::Schema.define(version: 20180806131412) do
 
   create_table "eventos", force: :cascade do |t|
     t.string "nombre"
-    t.date "fecha"
+    t.datetime "fecha"
     t.text "ubicacion"
     t.text "descripcion"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.time "hora"
   end
 
   create_table "lugares", force: :cascade do |t|
