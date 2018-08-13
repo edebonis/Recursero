@@ -1,6 +1,6 @@
 class Lugar < ActiveRecord::Migration[5.1]
   def change
-  	add_column :lugar, :longitude, :float
-  	add_column :lugar, :latitude, :float
+  	add_column :lugares, :longitude, :float
+  	add_column :lugares, :latitude, :float
   end
 end

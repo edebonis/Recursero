@@ -29,11 +29,13 @@
   </ul>
 </div>
 
-  <%= map(:center => {
-    :latlng => [-34.6752, -58.4295
-],
-    :zoom => 16
-  }) %>
+  <%= map(
+    :center => {
+      :latlng => [-34.6752, -58.4295],
+      :zoom => 16
+    },
+    :markers => @lugares.map { |l| l.marker }
+    ) %>
 
 
 <div class="mapa">

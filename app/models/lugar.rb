@@ -5,4 +5,8 @@ class Lugar < ApplicationRecord
 def direccion_completa
 self.direccion + ", Valentin Alsina, Buenos Aires, Argentina"
 end
+
+def marker
+{latlng: [self.latitude, self.longitude], popup: self.nombre}
+end
 end
