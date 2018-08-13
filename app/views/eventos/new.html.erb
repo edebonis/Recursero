@@ -1,4 +1,4 @@
-<h1>Nuevo Evento</h1>
+<h1 class="nuevo">Nuevo Evento</h1>
 
 <div class="formulario">
 <%= form_for :evento, url: eventos_path do |f| %>
@@ -27,6 +27,9 @@
   </p>
 
 <% end %>
+
+<div class="volver"><%= link_to 'Volver', eventos_path %></div>
+
 </div>
 
-<%= link_to 'Volver', eventos_path %>
+
