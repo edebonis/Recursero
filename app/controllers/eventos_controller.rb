@@ -23,6 +23,10 @@ class EventosController < ApplicationController
 
 		redirect_to eventos_path
 	end	
+
+	def mensaje_de_whatsapp
+		URI.encode "whatsapp://send?text=Te invito al evento #{@evento.nombre}!\r\nEl día #{ I18n.localize(@evento.fecha, format: "%A %d de %B, %Y a las %H:%Mhs") }. \r\nEn #{@evento.ubicacion }. \r\n\r\nMás info en #{ request.original_url }"
+	end
  
 	private
  	

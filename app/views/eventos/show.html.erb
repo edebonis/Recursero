@@ -1,21 +1,24 @@
 
-<p>
+<p class="nombre">
   <strong>Nombre:</strong>
   <%= @evento.nombre %>
 </p>
-<p>
+
+<p class="fecha">
   <strong>Fecha:</strong>
-  <%= I18n.localize(@evento.fecha, format: "%A %d de %B, %Y a las %H:%Mhs") %>
+  <%= I18n.localize(@evento.fecha, format: "%A %d de %B del %Y a las %H:%Mhs") %>
 </p>
  
-<p>
-  <strong>Ubicacion:</strong>
+<p class="ubicacion">
+  <strong>Ubicación:</strong>
   <%= @evento.ubicacion %>
 </p>
 
-<p>
-  <strong>Descripcion:</strong>
+<p class="descripcion">
+  <strong>Descripción:</strong>
   <%= @evento.descripcion %>
 </p>
 
-<%= link_to 'Volver', eventos_path %>
+<a class="compartir" href="<%= controller.mensaje_de_whatsapp %>" data-action="share/whatsapp/share">Compartir en WhatsApp</a>
+
+<div class="volver2"><%= link_to 'Volver', eventos_path %></div>
