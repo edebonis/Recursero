@@ -13,8 +13,13 @@
   </p>
 
   <p>
+    <%= f.label :descripcion %><br>
+    <%= f.text_area :descripcion %>
+  </p>
+
+  <p>
     <%= f.label :clasificacion %><br>
-    <%= f.select(:clasificacion, options_for_select(["Centro educativo","Centro de salud","Asesor legal integral","Recreacion","Deporte y cultura","Comunicacion","Centro de jubilados","Ambiente","Negocio"])) %>
+    <%= f.select(:clasificacion, options_for_select(["Centro educativo","Centro de salud","Asesor legal integral","Recreación","Deporte y cultura","Comunicación","Centro de jubilados","Ambiente","Negocio"])) %>
   </p>
  
   <p>
