@@ -33,10 +33,9 @@
     :center => {
       :latlng => [-34.6752, -58.4295],
       :zoom => 16
-    },
+    }, 
     :markers => @lugares.map { |l| l.marker }
-    ) %>
-
+    )%>
 
 <div class="mapa">
   <%= link_to 'Nuevo Lugar', new_lugar_path, class: "boton-nuevo" %>
