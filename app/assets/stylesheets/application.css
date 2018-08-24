@@ -76,18 +76,19 @@ table {
     font-family: 'Fredericka the Great', cursive;
     font-size: 68px;
     float: left;
-    margin: 0 60px;
+    flex-direction;
 }
 #titulo h1{
-    font-size:5vw;
+    font-size:auto;
 
 }
 
 #clima {
-    float: center;
-    width:50%;
-    height:78px;
+    justify-content:center;
+    width:auto;
+    height:auto;
     display: flex;
+    flex-direction;
 }
 #encabezado{
     height: 116px;
@@ -96,11 +97,9 @@ table {
     background-color: white
 
 }
-#encabezado h2{
-    padding-left: -50px;
-    padding-top: 40px;
+.encabezado {
+    flex-direction:column;
 }
-
 
 #botonera {
     height: 44px;
@@ -143,12 +142,12 @@ table {
 
 
 #fecha {
-  float: right;
-
+    float: right;
+    flex-direction;
 
 }
 
-#footer {
+    #footer {
     height: 150px;
     background-color: #1d84b5;
     text-align: center;

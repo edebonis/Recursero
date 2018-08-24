@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Villa Jardín</title>
-    <%= csrf_meta_tags %>
+      <head>
+        <title>Villa Jardín</title>
+        <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-  </head>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+         <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+      </head>
 
-  <body>
-    <div id="titulo">
-        <h1>Villa Jardín</h1>
-    </div>
-    <div id="fecha" es:>
-        <h2>
-            <%= I18n.localize(Date.today, format: "%A %d %B, %Y") %>
-        </h2>
-                
-    </div>
-    <div id="clima">
-    <div id="TT_FCyEEk11EddNCYwA7AuzDDzDjWnALEIlLYkdkZioaEj"></div>
-    <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_FCyEEk11EddNCYwA7AuzDDzDjWnALEIlLYkdkZioaEj" width="250px" height="158px"></script>
-  
-    </div>
-    
-    <div id="menu">
-        <div id="botonera">
-            <ul>
-                <li>
-                    <%= link_to 'Nuestro barrio', root_path %>
-                </li>                  
-                <li>
-                    <%= link_to 'Eventos', eventos_path %>
-                </li>
-                <li>
-                    <%= link_to 'Contacto', '/contacto/'%>
-                </li>                   
-                <li>
-            </ul>
+      <body>
+      <div id="encabezado">
+        <div id="titulo">
+            <h1>Villa Jardín</h1>
         </div>
-    </div>
- 
-    <div id="contenido">
-        <%= yield %>
-    </div>
+        <div id="fecha" es:>
+            <h2>
+                <%= I18n.localize(Date.today, format: "%A %d %B, %Y") %>
+            </h2>
+                    
+        </div>
+        <div id="clima" >
+        <div id="TT_FCyEEk11EddNCYwA7AuzDDzDjWnALEIlLYkdkZioaEj" ></div>
+        <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_FCyEEk11EddNCYwA7AuzDDzDjWnALEIlLYkdkZioaEj" width="250px" height="158px"></script>
+      
+        </div>
+        </div>
+        
+        <div id="menu">
+            <div id="botonera">
+                <ul>
+                    <li>
+                        <%= link_to 'Nuestro barrio', root_path %>
+                    </li>                  
+                    <li>
+                        <%= link_to 'Eventos', eventos_path %>
+                    </li>
+                    <li>
+                        <%= link_to 'Contacto', '/contacto/'%>
+                    </li>                   
+                    <li>
+                </ul>
+            </div>
+        </div>
+     
+        <div id="contenido">
+            <%= yield %>
+        </div>
 
-    <div id="footer">
-        <br>
-        <h3>
-        <img src="<%= image_url('gmail.png') %>" style="max-width:2.5%;height: auto">
-        </img>
-        <%= link_to 'redvillajardin@gmail.com', href= "mailto:redvillajardin@gmail.com?__xts__="%></h3>
-        <br>
-        <h3> 
-        <img src="<%= image_url('facebook.png') %>" style="max-width:2%;height: auto">
-        </img>
-        <%= link_to 'Red de Villa Jardin', href= "https://www.facebook.com/redvj/", target:"_blank"%>
-        </h3>
-    </div>    
-  </body>
+        <div id="footer">
+            <br>
+            <h3>
+            <img src="<%= image_url('gmail.png') %>" style="max-width:2.5%;height: auto">
+            </img>
+            <%= link_to 'redvillajardin@gmail.com', href= "mailto:redvillajardin@gmail.com?__xts__="%></h3>
+            <br>
+            <h3> 
+            <img src="<%= image_url('facebook.png') %>" style="max-width:2%;height: auto">
+            </img>
+            <%= link_to 'Red de Villa Jardin', href= "https://www.facebook.com/redvj/", target:"_blank"%>
+            </h3>
+        </div>    
+      </body>
 
 </html>
