@@ -3,7 +3,7 @@ class Lugar < ApplicationRecord
 	after_validation :geocode
 
 def direccion_completa
-self.direccion + ", Valentin Alsina, Buenos Aires, Argentina"
+self.direccion + ", Lanús, Buenos Aires, Argentina"
 end
 
 def marker
