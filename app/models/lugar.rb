@@ -3,7 +3,7 @@ class Lugar < ApplicationRecord
 	after_validation :geocode
 
 def direccion_completa
-self.direccion + ", Lanús, Buenos Aires, Argentina"
+self.direccion + ", Partido de Lanús, Buenos Aires, Argentina"
 end
 
 def marker

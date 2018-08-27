@@ -1,4 +1,4 @@
-
+<div id="contenido">
 <p>
   <strong>Nombre:</strong>
   <%= @lugar.nombre %>
@@ -24,6 +24,17 @@
   <%= @lugar.contacto %>
 </p>
 
+<div id="mapaLugar">
+<%= map(
+    :center => {
+      :latlng => @lugar.marker[:latlng],
+      :zoom => 18
+    }, 
+    :markers => [@lugar.marker]
+    )%>
+
+</div>
+</div>
 
 
 
