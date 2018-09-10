@@ -147,11 +147,18 @@ table {
 
 }
 
-    #footer {
+#footer {
     height: 150px;
     background-color: #1d84b5;
     text-align: center;
     float: bottom;
     margin-top: 240px;
     font-family:  'Indie Flower', cursive;
+}
+
+
+#mapaLugar{
+    width: 30%;
+    height: auto;
+    float: center;
 }
