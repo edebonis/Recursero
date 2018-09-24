@@ -13,17 +13,14 @@
 
    <div class=contenido2>
      <p class="nombre">
-       <strong>Nombre:</strong>
        <%= @evento.nombre %>
      </p>
 
      <p class="fecha">
-       <strong>Fecha:</strong>
-       <%= I18n.localize(@evento.fecha, format: "%A %d de %B del %Y a las %H:%Mhs") %>
+       <%= I18n.localize(@evento.fecha, format: "%A %d de %B del %Y / %H:%Mhs") %>
      </p>
 
      <p class="ubicacion">
-       <strong>Ubicación:</strong>
        <%= @evento.ubicacion %>
      </p>
 
@@ -39,7 +36,7 @@
      </div>
 
      <p class="descripcion">
-       <strong>Descripción:</strong>
+       <strong></strong>
        <%= @evento.descripcion %>
      </p>
 
