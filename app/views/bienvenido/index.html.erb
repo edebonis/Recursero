@@ -3,11 +3,11 @@
   <ul>
     <% @clasificaciones.each do |clasificacion| -%>
       <li>
-        <%= check_box_tag clasificacion, 'si', @clasificacionesFiltradas.include?(clasificacion) %><%= clasificacion %> 
+        <%= check_box_tag clasificacion, 'si', @clasificacionesFiltradas.include?(clasificacion) %> <%= clasificacion %> 
       </li>
     <% end %>
   </ul>
-  <%= submit_tag "Buscar"%>
+  <%= submit_tag "Filtrar"%>
   <% end %>
 </div>
 

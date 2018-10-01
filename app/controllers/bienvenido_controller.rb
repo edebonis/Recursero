@@ -9,6 +9,10 @@ class BienvenidoController < ApplicationController
   			@clasificacionesFiltradas << clasificacion
   		end
   	end
+
+  	if @clasificacionesFiltradas.empty?
+  		@clasificacionesFiltradas = @clasificaciones
+  	end
   	#Filtrar solo los lugares de esas clasificaciones
   	@lugares = Lugar.where(clasificacion: @clasificacionesFiltradas)
   end
