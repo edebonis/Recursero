@@ -1,5 +1,8 @@
-<% content_for :og_tags do %>
-  <meta property="og:title" content="Ejemplo de title" />
+ <% content_for :og_tags do %>
+  <meta property="og:title" content="<%= @evento.nombre %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<%= request.original_url %>" />
+  <meta property="og:image" content="https://static1.ideal.es/www/multimedia/201810/22/media/cortadas/calendario-laboral-festivos-puentes-kaIC-U601318058614N6E-624x385@Ideal.jpg" />
 <% end %>
 
 <div id="fb-root"></div>
