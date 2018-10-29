@@ -145,3 +145,17 @@
   text-align: center;
 } 
 //Parte de un evento cualquiera //
+
+
+#mapaLugar{
+  width: 30%;
+  height: auto;
+  float: center;
+}
+
+.contenido2{
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

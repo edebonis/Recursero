@@ -18,30 +18,38 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<p class="nombre">
-  <strong>Nombre:</strong>
-  <%= @evento.nombre %>
-</p>
+   <div class=contenido2>
+     <p class="nombre">
+       <%= @evento.nombre %>
+     </p>
 
-<p class="fecha">
-  <strong>Fecha:</strong>
-  <%= I18n.localize(@evento.fecha, format: "%A %d de %B del %Y a las %H:%Mhs") %>
-</p>
+     <p class="fecha">
+       <%= I18n.localize(@evento.fecha, format: "%A %d de %B del %Y / %H:%Mhs") %>
+     </p>
 
-<p class="ubicacion">
-  <strong>Ubicación:</strong>
-  <%= @evento.ubicacion %>
-</p>
+     <p class="ubicacion">
+       <%= @evento.ubicacion %>
+     </p>
 
-<p class="descripcion">
-  <strong>Descripción:</strong>
-  <%= @evento.descripcion %>
-</p>
+     <p class="descripcion">
+       <%= @evento.descripcion %>
+     </p>
 
-<a class="compartir" href="<%= controller.mensaje_de_whatsapp %>" data-action="share/whatsapp/share"><img border="0" alt="W3Schools" src="/logo_whatsapp.png" width="20" height="20"> Compartir </a>
+     <div id="mapaLugar">
+     <%= map(
+         :center => {
+           :latlng => @evento.marker[:latlng],
+           :zoom => 18
+         }, 
+         :markers => [@evento.marker]
+         )%>
 
+     </div>
+   </div>
 
 <div class="volver2"><%= link_to 'Volver', eventos_path %></div>
+
+<a class="compartir" href="<%= controller.mensaje_de_whatsapp %>" data-action="share/whatsapp/share"><img border="0" alt="W3Schools" src="/logo_whatsapp.png" width="20" height="20"> Compartir </a>
 
 <div div class="fb-share-button" data-href="<%= request.original_url %>" data-layout="button" data-size="large" data-mobile-iframe="true">
   <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" >Compartir</a>

@@ -1,5 +1,3 @@
-<h1>Nuevo Lugar</h1>
-
 <div class="formulario">
 <%= form_for :lugar, url: lugares_path do |f| %>
   <p>
@@ -19,7 +17,7 @@
 
   <p>
     <%= f.label :clasificacion %><br>
-    <%= f.select(:clasificacion, options_for_select(["Centro educativo","Centro de salud","Asesor legal integral","Recreación","Deporte y cultura","Comunicación","Centro de jubilados","Ambiente","Negocio"])) %>
+    <%= f.select(:clasificacion, options_for_select(@lugar.clasificaciones)) %>
   </p>
  
   <p>
